@@ -1,11 +1,15 @@
-FROM node:lts-buster
+FROM node:16.10.0-butser
 
 RUN apt-get update && \
   apt-get install -y \
+  neofetch \
+  chromium \
   ffmpeg \
+  wget \
   imagemagick \
-  webp && \
-  apt-get upgrade -y && \
+  graphicsmagik \
+  webp \ 
+  mc && \
   rm -rf /var/lib/apt/lists/*
 
 COPY package.json .

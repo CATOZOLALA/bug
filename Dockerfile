@@ -7,7 +7,6 @@ RUN apt-get update && \
   ffmpeg \
   wget \
   imagemagick \
-  graphicsmagik \
   webp \ 
   mc && \
   rm -rf /var/lib/apt/lists/*
